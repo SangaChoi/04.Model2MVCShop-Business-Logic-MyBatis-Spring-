@@ -71,11 +71,11 @@ public class ProductServiceTest {
 		System.out.println(product);
 	}
 	
-	//@Test
+	@Test
 	public void testGetProductListAll() throws Exception{
 		
 		Search search = new Search();
-	 	search.setCurrentPage(1);
+	 	search.setCurrentPage(3);
 	 	search.setPageSize(3);
 	 	Map<String,Object> map = productService.getProductList(search);
 	
@@ -128,7 +128,7 @@ public class ProductServiceTest {
 		
 	}
 	 
-	@Test
+	//@Test
 		 public void testGetProductListByPrice() throws Exception{
 			
 			Search search = new Search();
